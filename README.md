@@ -24,4 +24,6 @@ This app will consist of two activities a list page and an edit page. Users will
 * This is very similar to our journal app, however, there are two functionality changes
   * Added Save button for user to not have to press back to return
   * Added Delete button and functionality. This will work very similarly to the add/edit functionality. Check the `ArrayList` documentation if you need help figuring out how to remove items from a list
+  
+  initial
 
