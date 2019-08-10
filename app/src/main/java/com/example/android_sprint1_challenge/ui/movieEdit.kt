@@ -17,24 +17,29 @@ class movieEdit : AppCompatActivity() {
         setContentView(R.layout.activity_movie_editpage)
 
 
-         fun createMovie():Movie{
-             var newMovie = Movie(edit_movie_title.text.toString())
-             return newMovie
-         }
+        fun createMovie(): Movie {
+            var newMovie = Movie(edit_movie_title.text.toString())
+            return newMovie
+        }
 
-        fun loadMovie(movie: Movie){
+        fun loadMovie(movie: Movie) {
             edit_movie_title.setText(movie.movieName)
         }
 
+            btn_SAVE.setOnClickListener{
+                val intentSaveMovie = Intent()
 
-        btn_SAVE.setOnClickListener{
+            }
+
+
+       /* btn_SAVE.setOnClickListener {
             var intentSaveMovie = Intent()
-            intentSaveMovie.putExtra("movie",createMovie())
-            setResult(Activity.RESULT_OK,intentSaveMovie)
+            intentSaveMovie.putExtra("movie", createMovie())
+            setResult(Activity.RESULT_OK, intentSaveMovie)
             finish()
-        }
-        var bundle:Bundle? = intent.extras
-        if(bundle!=null)  {
+        }  */
+        var bundle: Bundle? = intent.extras
+        if (bundle != null) {
             loadMovie(bundle!!.getSerializable("moviekey") as Movie)
         }
     }

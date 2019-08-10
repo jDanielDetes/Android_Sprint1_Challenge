@@ -9,9 +9,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".ui.movieList">
-        </activity>
         <activity android:name=".ui.movieEdit">
+        </activity>
+        <activity android:name=".ui.movieList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

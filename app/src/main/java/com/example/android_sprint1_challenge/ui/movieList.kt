@@ -22,7 +22,7 @@ class movieList : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_movie_editpage)
+        setContentView(R.layout.activity_movie_list)
 
         button_add_movie.setOnClickListener {
             var addMovieIntent = Intent(this, movieEdit::class.java)
