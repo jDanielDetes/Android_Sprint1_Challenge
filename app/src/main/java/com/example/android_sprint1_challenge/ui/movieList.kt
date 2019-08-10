@@ -65,6 +65,8 @@ class movieList : AppCompatActivity() {
         if(requestCode== REQUEST_CODE_EDIT_MOVIE && resultCode == Activity.RESULT_OK) {
             val newMovie= data!!.getSerializableExtra("movie") as com.example.android_sprint1_challenge.Model.Movie
             movielist.add(newMovie)
+            LL_movielist.addView(MovieTextView(newMovie,counter))
+            counter++
         }
     }
 }

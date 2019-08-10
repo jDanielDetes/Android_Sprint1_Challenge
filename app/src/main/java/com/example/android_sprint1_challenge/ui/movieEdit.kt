@@ -26,18 +26,15 @@ class movieEdit : AppCompatActivity() {
             edit_movie_title.setText(movie.movieName)
         }
 
-            btn_SAVE.setOnClickListener{
-                val intentSaveMovie = Intent()
-
-            }
 
 
-       /* btn_SAVE.setOnClickListener {
+
+          btn_SAVE.setOnClickListener {
             var intentSaveMovie = Intent()
             intentSaveMovie.putExtra("movie", createMovie())
             setResult(Activity.RESULT_OK, intentSaveMovie)
             finish()
-        }  */
+        }
         var bundle: Bundle? = intent.extras
         if (bundle != null) {
             loadMovie(bundle!!.getSerializable("moviekey") as Movie)
