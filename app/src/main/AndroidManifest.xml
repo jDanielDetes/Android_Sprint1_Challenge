@@ -11,7 +11,7 @@
             android:theme="@style/AppTheme">
         <activity android:name=".ui.movieList">
         </activity>
-        <activity android:name=".ui.MovieList">
+        <activity android:name=".ui.movieEdit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
