@@ -69,4 +69,6 @@ class movieList : AppCompatActivity() {
             counter++
         }
     }
+
+
 }

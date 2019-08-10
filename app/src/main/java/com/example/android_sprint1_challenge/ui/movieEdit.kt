@@ -39,5 +39,11 @@ class movieEdit : AppCompatActivity() {
         if (bundle != null) {
             loadMovie(bundle!!.getSerializable("movieKey") as Movie)
         }
+
+        btn_Delete.setOnClickListener{
+            
+        }
     }
+
+
 }
