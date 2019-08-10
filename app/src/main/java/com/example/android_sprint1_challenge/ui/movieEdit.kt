@@ -37,7 +37,7 @@ class movieEdit : AppCompatActivity() {
         }
         var bundle: Bundle? = intent.extras
         if (bundle != null) {
-            loadMovie(bundle!!.getSerializable("moviekey") as Movie)
+            loadMovie(bundle!!.getSerializable("movieKey") as Movie)
         }
     }
 }
